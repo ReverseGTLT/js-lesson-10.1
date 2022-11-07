@@ -83,6 +83,7 @@ const resultPositiveMultiplication = arrayPositiveMultiplication.reduce((accum, 
 console.log(`Сумма непарных положительных элементов равна: ${resultPositiveMultiplication}`)
 
 // 10. Знайти найбільший серед елементів масиву, остальні обнулити.
+// Вариант с циклом.
 // const arrayMax = array.slice(0);
 // const elementMax = Math.max(...arrayMax);
 // for (let index = 0; index < arrayMax.length; index++) {
@@ -91,11 +92,11 @@ console.log(`Сумма непарных положительных элемен
 //     }
 // }
 // console.log(arrayMax);
+
+// Вариант без цикла.
 const arrayMax = array.slice(0);
 const elementMax = Math.max(...arrayMax);
 let resultOtherElement = arrayMax.map((element) => {
-    if (element !== elementMax) {
-        element = 0;
-    }
+    return element !== elementMax ? 0 : element;
 })
 console.log(resultOtherElement);
