@@ -13,13 +13,13 @@ console.log(`Сумма положительных элементов равна
 // 2. Знайти мінімальний елемент масиву та його порядковий номер.
 const arrayValueMin = array.slice(0);
 const valueMinResult = Math.min(...arrayValueMin)
-const serialValueMinResult = arrayValueMin.indexOf(valueMinResult)+1;
+const serialValueMinResult = arrayValueMin.indexOf(valueMinResult);
 console.log(`Минимальный элемент массива равен: ${valueMinResult}, а его порядковый номер равен: ${serialValueMinResult}.`)
 
 // 3. Знайти максимальний елемент масиву та його порядковий номер.
 const arrayValueMax = array.slice(0);
 const valueMaxResult = Math.max(...arrayValueMax)
-const serialValueMaxResult = arrayValueMax.indexOf(valueMaxResult)+1;
+const serialValueMaxResult = arrayValueMax.indexOf(valueMaxResult);
 console.log(`Максимальный элемент массива равен: ${valueMaxResult}, а его порядковый номер равен: ${serialValueMaxResult}.`)
 
 // 4. Визначити кількість негативних елементів.
